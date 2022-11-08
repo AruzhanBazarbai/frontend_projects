@@ -1,0 +1,23 @@
+
+.header-wrapper{
+    display: flex;
+    height: 52px;
+    border-bottom: 1px solid gray;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.menu-icon{
+}
+.youtube-logo-icon{
+}
+.right-section{
+    display: flex;
+}
+.middle-section{
+    display: flex;
+}
+.left-section{
+    display: flex;
+}
