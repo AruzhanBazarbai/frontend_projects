@@ -4,7 +4,7 @@
     bottom: 0px;
     top: 53px;
     left: 0px;
-    padding-top: 7px;
+    padding-top: 10px;
     background-color: white;
     z-index: 200;
     
@@ -12,14 +12,14 @@
 .sidebar-wrapper > div{
     display: flex;
     flex-direction: column;
-    height: 74px;
+    height: 76px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
 .sidebar-wrapper img{
     height: 24px;
-    margin-bottom: 5px;
+    margin-bottom: 5.5px;
 }
 .sidebar-wrapper > div:hover{
     background-color: rgb(235, 235, 235);

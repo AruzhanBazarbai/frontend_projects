@@ -49,3 +49,29 @@
 .video-author{
     margin-bottom: 4px;
 }
+
+
+@media (max-width:500px){
+    .main-block-wrapper{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width:501px) and (max-width:849px){
+    .main-block-wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:850px) and (max-width:1124px){
+    .main-block-wrapper{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+@media (min-width: 1125px){
+    .main-block-wrapper{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
