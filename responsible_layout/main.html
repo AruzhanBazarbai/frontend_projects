@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Responsible layout example</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(226, 222, 222);
+            padding: 20px;
+            font-family: Arial;
+            margin: 0;
+        }
+        .header{
+            
+            padding: 30px;
+            text-align: center;
+            background-color: white;
+        }
+        .header h1{
+            font-size: 50px;
+        }
+        .header p{
+            font-size: 20px;
+        }
+        .top-nav{
+            background-color: rgb(90, 89, 89);
+            overflow: hidden;
+            
+        }
+        .top-nav a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            padding: 15px 18px;
+            float: left;
+        }
+        .top-nav a:hover{
+            background-color: rgb(187, 187, 187);
+            color:black;
+
+        }
+
+        /* main content style */
+        .left-content{
+            width: 75%;
+            float: left;
+        }
+        .card > div{
+            height: 100px;
+            width: 100%;
+            background-color: gray;
+        }
+        .card{
+            margin-top: 10px;
+            padding: 20px;
+            background-color: white;
+        }
+        
+        .right-content{
+            width: 25%;
+            float: left;
+            padding-left: 20px;
+        }
+        /* Clear floats after the columns */
+        .main-content-wrapper:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+        /* footer style */
+        .footer{
+            background-color: white;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            margin-top: 10px;
+            padding-top: 20px;
+            font-size: 50px;
+        }
+
+        /* css responsibility */
+        @media (max-width:400px){
+            .top-nav a{
+                float: none;
+                width: 100%;
+            }
+        }
+        @media (max-width:800px){
+            .right-content,
+            .left-content{
+                width: 100%;
+                padding: 0;
+            }
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <h1>My website</h1>
+        <p>Resize the browser window to see the effect.</p>
+       
+    </div>
+    <div class="top-nav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+    <nav>
+
+    </nav>
+    <main class="main-content-wrapper">
+        <section class="left-content">
+            <div class="card">
+                <h1>TITLE HEADING</h1>
+                <p>Title description, Dec 7, 2017</p>
+                <div>Image</div>
+                <p>Some text...</p>
+                <p>
+                    Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                    nostrud exercitation ullamco.
+                </p>
+            </div>
+            <div class="card">
+                <h1>TITLE HEADING</h1>
+                <p>Title description, Dec 7, 2017</p>
+                <div>Image</div>
+                <p>Some text...</p>
+                <p>
+                    Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                    nostrud exercitation ullamco.
+                </p>
+            </div>
+        </section>
+        <section class="right-content">
+            <div class="card">
+                <h1>About me</h1>
+                <div>Image</div>
+                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+
+            </div>
+            <div class="card">
+                <h1>Popular Post</h1>
+                <div>Image</div>
+                <div>Image</div>
+                <div>Image</div>
+            </div>
+            <div class="card">
+                <h1>Follow me</h1>
+                <p>Some text...</p>
+            </div>
+        </section>
+    </main>
+    <footer  class="footer">
+        Footer
+    </footer>
+    
+</body>
+</html>
