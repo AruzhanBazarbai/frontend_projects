@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+form{
+  font-size: 30px;
+}
+input{
+  margin:15px;
+  padding: 10px;
+  font-size:30px;
+}
+label{
+  display:block;
+}
+h1{
+  font-size: 70px;
+}

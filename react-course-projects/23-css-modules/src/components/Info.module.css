@@ -1,0 +1,14 @@
+.info{
+    border:2px solid gray;
+    padding:20px;
+    border-radius: 10px;
+    max-width: 50%;
+    margin: 20px auto;
+}
+.myOtherButton{
+    background-color: grey;
+}
+/* Works globally */
+h2{
+    color:blue;
+}

@@ -1,0 +1,30 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-family:'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    color:white;
+    background-color: #112d49;
+}
+
+/* h1{
+  font-size: 90px;
+  margin-top: 20px;
+}
+
+button{
+  padding: 15px;
+  font-size: 30px;
+  border-radius: 5px;
+  border: 0;
+  margin: 20px;
+}
+button:hover{
+  cursor: pointer;
+  box-shadow: 10px 10px 10px black;
+} */
+
